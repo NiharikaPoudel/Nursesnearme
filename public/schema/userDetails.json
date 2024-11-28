@@ -16,6 +16,10 @@
         "userAddress": {
             "type": "String",
             "required": true
-        }
-
+        },
+        "userAccess": {
+        "type": "String",
+        "required" : true,
+        "enum" : ["admin", "user", "nurse"]
+    }
 }

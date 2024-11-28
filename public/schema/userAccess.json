@@ -1,7 +1,0 @@
-{
-    "userAccess": {
-        "type": "String",
-        "required" : true,
-        "enum" : ["admin", "user", "nurse"]
-    }
-}
