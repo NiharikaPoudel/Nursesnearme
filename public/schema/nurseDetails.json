@@ -1,0 +1,20 @@
+{
+    "nurseFullName": {
+        "type": "String",
+        "required": true
+    },
+    "nursePhoneNumber": {
+        "type": "String",
+        "required": true,
+        "unique": true
+    },
+    "nurseGmail": {
+        "type": "String",
+        "required": true,
+        "unique": true
+    },
+    "nurseAddress": {
+        "type": "String",
+        "required": true
+    }
+}

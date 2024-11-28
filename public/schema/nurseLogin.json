@@ -1,0 +1,11 @@
+{
+    "nurseId": {
+        "type": "String",
+        "required" : true,
+        "unique" : true
+    },
+    "nursePassword":{
+        "type": "String",
+        "required" : true
+    }
+}
