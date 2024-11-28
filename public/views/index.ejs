@@ -1,49 +1,447 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="biomedical enhancement website">
-    <meta name="keywords" content="biomedical enhancement, health care professionals ,nurses near me">
-    <meta name="author" content="Professionals near me ">
-    <title>We Hire - Home </title>
-    <link rel="">
-    <link rel="">
+    <meta name="description" content="Biomedical enhancement website">
+    <meta name="keywords" content="biomedical enhancement, healthcare professionals, cognitive supplements">
+    <meta name="author" content="WeCare">
+    <title>WeCare | Home</title>
+    <link rel="icon" href="./IMAGE/wecare-favicon.png" type="image">
+    <link rel="stylesheet" href="./CSS/STYLE.css">
+    
+    <style>
+     
 
+        /* Navigation Styles */
+        nav {
+            background:white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 40px;
+        }
+
+        .searchbox {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .searchbox input {
+            width: 80%;
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .linkpart ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .linkpart ul li {
+            padding-right: 20px;
+        }
+
+        .linkpart ul li:last-child {
+            padding-right: 0;
+        }
+
+        .linkpart ul li a {
+            color:#128a44;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .linkpart ul li a:hover {
+            color: rgb(28, 28, 1);
+        }
+
+        /* Footer Styles */
+        .footerpart {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+
+        .footerpart div {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .footerpart p {
+            margin: 10px 0;
+        }
+
+        .footerpart a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .getpart input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .subscribe {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .subscribe:hover {
+            background: #c01746;
+        }
+
+        .bottompart {
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .bottomicon ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .footericon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s;
+        }
+        .footericon:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .footerpart {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+            
+            .searchbox {
+                margin: 15px 0;
+                width: 100%;
+            }
+            
+            .linkpart ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .linkpart ul li {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
-        <!--Navigation bar part starts from here -->
         <div>
-            <a href=""><img src="" alt="We Hire" class="logo"></a>
+            <a href="/INDEX.HTML"><img src="Screenshot 2024-11-23 101918.png" alt="WeCare" class="logo"></a>
         </div>
-        <div class="Searchbox">
-            <input type="search" placeholder="Search here">
-            <span><img align="center" src="search_icon.png" alt="" style="width: 27px; height: 25px"></span>
-        </div>
-        <div class="link part">
+        
+        <div class="linkpart">
             <ul>
-                <li> <a class="active" href="" >HOME</a></li>
-                <li><a href="">DISCOVER</a></li>
-                <li><a href="">REACH OUT</a></li>
-                <li><a href="">ARTICLES</a></li>
-                <li><a href="">ABOUT US</a></li>
+                <li><a class="active" href="./INDEX.HTML">HOME</a></li>
+                <li><a href="blogpage.html">DISCOVER</a></li>
+                <li><a href="/HTML/RESEARCH.HTML">LOGIN</a></li>
+                <li><a href="/HTML/ABOUTUS.HTML">LET'S CONNECT</a></li>
+                <li><a href="/HTML/ABOUTUS.HTML">ABOUT US</a></li>
+                
             </ul>
         </div>
     </nav>
-    <!--Banner with Dynamically Changing Image Slider-->
-    <div class="Banner">
-        <div id="img 1">
-            <img src="" alt="Healthcare Images" class="fade">
-        </div>
-    </div>
-     <!-- Main Section Of the HomePage-->
-     <div class="mainsection">
-        <h1>Welcome to WeCare</h1>
-        <p>Connect with biomedical enhancement professionals and access valuable resources</p>
-    </div>w
+    <body>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Get Quick Medical Services</h1>
+                <p>In today's fast-paced world, access to prompt and efficient medical services is of paramount importance. When faced with a medical emergency or seeking immediate medical attention, the ability to receive quick medical services can significantly impact the outcome of a situation.</p>
+                <a href="#" class="get-services-btn">Get Services</a>
+            </div>
+            <div class="hero-image">
+                <img src="banner.jpeg" alt="Doctor">
+            </div>
+        </section>
+    
+        
+            
+    
+       
     </body>
-    </html>
+    
+      
+    
+        <style>
+            /* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.get-services-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.get-services-btn:hover {
+    background-color: #45a049;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.feature-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.feature-icon {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.testimonial-image {
+    flex: 0 0 100px;
+    margin-right: 30px;
+}
+
+.testimonial-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.testimonial-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+            /* Base Styles */
+            .professionals-categories {
+                padding: 50px 0;
+                background-color: #f9f9f9;
+            }
+    
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+    
+            .professionals-container {
+                display: flex;
+                justify-content: space-between;
+            }
+    
+            .professional-card {
+                flex: 1;
+                text-align: center;
+                padding: 20px;
+                background-color: white;
+                margin: 0 10px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+    
+            .professional-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+            }
+    
+            .professional-image {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #2ecc71;
+                transition: transform 0.3s ease;
+            }
+    
+            .professional-card:hover .professional-image {
+                transform: scale(1.1) rotate(5deg);
+            }
+    
+            .professional-title {
+                margin-bottom: 10px;
+                color: #2c3e50;
+                font-weight: bold;
+            }
+    
+            .professional-description {
+                color: #7f8c8d;
+                margin-bottom: 15px;
+            }
+    
+            .learn-more-btn {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 8px 15px;
+                background-color: #2ecc71;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+    
+            .learn-more-btn:hover {
+                background-color: #27ae60;
+                transform: scale(1.05);
+            }
+    
+            .section-title {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #098e3e;
+            }
+        </style>
+    </head>
+    
+        
+    
 
     <!-- Footer Section -->
     <footer>
@@ -65,11 +463,7 @@
                 <p>Community First</p>
             </div>
     
-            <!-- Blood Donation Section -->
-            <div class="blooddonationpart" style="flex: 1; min-width: 200px; text-align: center; margin-right: 20px;">
-                <p style="font-weight: bold; font-size: 1.2em; color: #FF5733;">🩸 BLOOD DONATION ❤️</p>
-                <p>Join us in saving lives! Every drop counts! 💧</p>
-            </div>
+            
     
             <!-- Subscription Section -->
             <div class="getpart" style="flex: 1; min-width: 200px;">
@@ -95,12 +489,5 @@
     </footer>
     
     </script>
-</body>
-</html>
-</body>
 
-</head>
-<body>
-    
-</body>
 </html>
