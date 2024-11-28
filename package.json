@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/SicaDeveloper/Nursesnearme/tree/main#readme",
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.21.1",
     "mongoose": "^8.8.3",
+    "nursesnearme": "file:"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
     "nodemon": "^3.1.7"
   }
 }
